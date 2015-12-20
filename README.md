@@ -19,9 +19,13 @@ Contains
 Installation
 
       ```Clone the repo configs
-      git clone git@github.com:moutard/configs.git $CLONEDIR
+      ```Clone the repo configs
+      cd ~
+      git clone https://github.com/luohoufu/configs.git
       " Make a link to vim parameters
-      ln -s ~/.vim $CLONEDIR/configs/vim
+      ln -s ~/configs/vim ~/.vim
+      ln -s ~/.vim/.vimrc .vimrc
+      mkdir ~/.vim/bundle
       " Clone vundle
       git clone https://github.com/gmarik/vundle.git $CLONEDIR/configs/vim/bundle/vundle
       ```
