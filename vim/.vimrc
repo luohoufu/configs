@@ -221,7 +221,7 @@ Bundle 'vim-scripts/grep.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/nerdtree'
 Bundle 'fholgado/minibufexpl.vim'
-
+Bundle 'lokaltog/vim-powerline'
 """"""""""""""""""""""""""""""
 " => Plugin Configuration
 """"""""""""""""""""""""""""""
@@ -250,5 +250,14 @@ let g:miniBufExplVSplit = 25
 let g:miniBufExplSplitBelow=1
 
 let g:bufExplorerSortBy = "name"
+
+""""""""""""""""""""""""""""""                                                  
+" - Power Line                                                                  
+""""""""""""""""""""""""""""""                                                  
+                                                                               
+set laststatus=2                                                                
+set t_Co=256                                                                    
+let g:Powerline_symbols = 'unicode'                                             
+set encoding=utf8
 
 autocmd BufRead,BufNew :call MBEToggle
